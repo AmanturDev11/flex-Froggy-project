@@ -1,9 +1,9 @@
-import Wrapper from "./components/wrapper/Wrapper";
+import Home from "./pages/Home";
 
 const App = () => {
 	return (
 		<div>
-			<Wrapper />
+			<Home />
 		</div>
 	);
 };
