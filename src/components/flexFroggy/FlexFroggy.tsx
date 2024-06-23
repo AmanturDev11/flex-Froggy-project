@@ -1162,11 +1162,13 @@ const FlexFroggy = ({ level, input }) => {
 								)}
 							</div>
 							<div
-								style={{
-									display: "flex",
-									flexDirection: "column",
-									gap: "10rem",
-								}}>
+								style={
+									{
+										// display: "flex",
+										// flexDirection: "column",
+										// gap: "10rem",
+									}
+								}>
 								{inst.icon30 && (
 									<img
 										style={{
@@ -1191,6 +1193,8 @@ const FlexFroggy = ({ level, input }) => {
 											width: "7rem",
 											height: "7rem",
 											borderRadius: "5rem",
+											top: "17rem",
+											right: "7rem",
 											// bottom: "35rem",
 										}}
 										src={inst.icon29}
@@ -1206,6 +1210,8 @@ const FlexFroggy = ({ level, input }) => {
 											width: "7rem",
 											height: "7rem",
 											borderRadius: "5rem",
+											top: "34rem",
+											right: "14rem",
 											// bottom: "35rem",
 										}}
 										src={inst.icon28}
@@ -1213,7 +1219,15 @@ const FlexFroggy = ({ level, input }) => {
 									/>
 								)}
 							</div>
-							<div style={{ display: "flex", gap: "2rem" }}>
+							<div
+								style={{
+									display: "flex",
+									gap: "3rem",
+									// ...(input ===
+									// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+									// 	? { display: 'flex', flexDirection: 'row-reverse', justifyContent: 'center', alignItems: 'flex-end' }
+									// 	: {}),
+								}}>
 								{inst.img31 && (
 									<img
 										style={{
@@ -1226,10 +1240,10 @@ const FlexFroggy = ({ level, input }) => {
 											// bottom: "1rem",
 											top: "6rem",
 											borderRadius: "5rem",
-											// ...(input ===
-											// "flex-direction: column-reverse; justify-content: space-between"
-											// 	? { top: "40rem" }
-											// 	: {}),
+											...(input ===
+											"flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+												? { top: "39rem", left: "24rem" }
+												: {}),
 										}}
 										src={inst.img31}
 										alt="img3"
@@ -1247,10 +1261,10 @@ const FlexFroggy = ({ level, input }) => {
 											// bottom: "1rem",
 											top: "6rem",
 											borderRadius: "5rem",
-											// ...(input ===
-											// "flex-direction: column-reverse; justify-content: space-between"
-											// 	? { top: "40rem" }
-											// 	: {}),
+											...(input ===
+											"flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+												? { top: "39rem", left: "8rem" }
+												: {}),
 										}}
 										src={inst.img32}
 										alt="img3"
@@ -1268,10 +1282,10 @@ const FlexFroggy = ({ level, input }) => {
 											// bottom: "1rem",
 											top: "6rem",
 											borderRadius: "5rem",
-											// ...(input ===
-											// "flex-direction: column-reverse; justify-content: space-between"
-											// 	? { top: "40rem" }
-											// 	: {}),
+											...(input ===
+											"flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+												? { top: "39rem", right: "8rem" }
+												: {}),
 										}}
 										src={inst.img33}
 										alt="img3"
@@ -1281,10 +1295,13 @@ const FlexFroggy = ({ level, input }) => {
 							<div
 								style={{
 									display: "flex",
+									gap: "1rem",
 									// justifyContent: "center",
+									// alignItems: "center",
 									marginTop: "33rem",
+									marginLeft: "7rem",
 								}}>
-								{inst.icon31 && (
+								{inst.icon33 && (
 									<img
 										style={{
 											position: "relative",
@@ -1295,7 +1312,7 @@ const FlexFroggy = ({ level, input }) => {
 											borderRadius: "5rem",
 											// bottom: "35rem",
 										}}
-										src={inst.icon31}
+										src={inst.icon33}
 										alt="icon3"
 									/>
 								)}
@@ -1314,7 +1331,7 @@ const FlexFroggy = ({ level, input }) => {
 										alt="icon3"
 									/>
 								)}
-								{inst.icon33 && (
+								{inst.icon31 && (
 									<img
 										style={{
 											position: "relative",
@@ -1325,7 +1342,7 @@ const FlexFroggy = ({ level, input }) => {
 											borderRadius: "5rem",
 											// bottom: "35rem",
 										}}
-										src={inst.icon33}
+										src={inst.icon31}
 										alt="icon3"
 									/>
 								)}
