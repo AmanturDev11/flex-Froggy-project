@@ -42,7 +42,7 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 					"flex-direction: row-reverse; justify-content: center; align-items: flex-end") ||
 			(number === 13 && value === "order: 1") ||
 			(number === 14 && value === "order: -1") ||
-			(number === 15 && value === "align-self: flex-end")
+			(number === 15 && value === "align-self:flex-end")
 		) {
 			setCorrect(true);
 		} else {

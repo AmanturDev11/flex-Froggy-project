@@ -1638,6 +1638,175 @@ const FlexFroggy = ({ level, input }) => {
 									/>
 								)}
 							</div>
+							<div style={{ display: "flex", gap: "43px", marginLeft: "2rem" }}>
+								{inst.img39 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img39}
+										alt="img3"
+									/>
+								)}
+								{inst.img39 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img39}
+										alt="img3"
+									/>
+								)}
+								{inst.img40 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											...(input === "align-self:flex-end"
+												? { top: "32rem" }
+												: {}),
+										}}
+										src={inst.img40}
+										alt="img3"
+									/>
+								)}
+								{inst.img39 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img39}
+										alt="img3"
+									/>
+								)}
+								{inst.img39 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img39}
+										alt="img3"
+									/>
+								)}
+							</div>
+							<div style={{ display: "flex", gap: "10px", marginLeft: "2rem" }}>
+								{inst.icon39 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon39}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon39 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon39}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon40 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											// bottom: "6rem",
+											top: "26rem",
+											right: "1rem",
+										}}
+										src={inst.icon40}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon39 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon39}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon39 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon39}
+										alt="icon3"
+									/>
+								)}
+							</div>
 						</div>
 					))}
 				</div>

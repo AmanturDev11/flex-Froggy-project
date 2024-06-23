@@ -46,6 +46,8 @@ type Instruction = {
 	img36?: string;
 	img37?: string;
 	img38?: string;
+	img39?: string;
+	img40?: string;
 	icon3?: string;
 	icon4?: string;
 	icon5?: string;
@@ -82,6 +84,8 @@ type Instruction = {
 	icon36?: string;
 	icon37?: string;
 	icon38?: string;
+	icon39?: string;
+	icon40?: string;
 	// vari?: string;
 };
 
@@ -115,7 +119,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			},
 		],
 		example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
-		vari: "Туура жобуу",
+		// vari: "Туура жобуу",
 	},
 	{
 		id: 2,
@@ -440,7 +444,17 @@ export const DataFroggy: DataFroggyTypes[] = [
 		id: 16,
 		level: 16,
 		text: "Ещё одно свойство, которое ты можешь применить к определенному элементу — это align-self. Это свойство принимает те же значения, что и align-items.",
-		instruction: [{}],
+		instruction: [
+			{
+				img39: "https://flexboxfroggy.com/favicon.ico",
+				img40:
+					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				icon39:
+					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				icon40:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+			},
+		],
 		// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
 	},
 ];
