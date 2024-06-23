@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import image1Icon from "../assets/icons/skip-left-fill.svg";
-import image2Icon from "../assets/icons/skip-right-fill.svg";
-import { DataFroggy } from "../utils/data";
+// import image1Icon from "../assets/icons/skip-left-fill.svg";
+// import image2Icon from "../assets/icons/skip-right-fill.svg";
+// import { DataFroggy } from "../utils/data";
 // import FlexFroggy from "./flexFroggy/FlexFroggy";
 import { Button } from "./UI/Button";
 import Input from "./UI/Input";
 import scss from "./FroggyLogica.module.scss";
+import Header from "../layout/header/Header";
+import MapText from "./mapText/MapText";
 
 const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 	// const [input, setInput] = useState("");
@@ -69,14 +71,14 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 		setNumber((prevValue) => prevValue + 1);
 	};
 
-	const currentInstruction = DataFroggy[number].instruction;
+	// const currentInstruction = DataFroggy[number].instruction;
 
 	return (
 		<div className={scss.FroggyLogica}>
 			<div className="container">
 				<div className={scss.content}>
 					<div>
-						<div style={{ display: "flex", justifyContent: "flex-end" }}>
+						{/* <div style={{ display: "flex", justifyContent: "flex-end" }}>
 							<div
 								style={{
 									display: "flex",
@@ -110,9 +112,14 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 									alt=""
 								/>
 							</div>
-						</div>
-
-						<div>
+						</div> */}
+						<Header
+							number={number}
+							handlePrevClick={handlePrevClick}
+							handleNextClick={handleNextClick}
+						/>
+						<MapText levelData={levelData} number={number} />
+						{/* <div>
 							<div>
 								<span>{levelData.text}</span>
 							</div>
@@ -127,7 +134,7 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 									</ul>
 								</div>
 							))}
-						</div>
+						</div> */}
 						{/* <input type="text" value={input} onChange={handleChange} /> */}
 						{/* <button onClick={handleButtonClick} disabled={!correct}>
 				Move
