@@ -1,14 +1,14 @@
 import React from "react";
 import { DataFroggy } from "../../utils/data";
-import scss from "./FlexFroggy.module.scss";
+import { styled } from "@mui/material";
 
 const FlexFroggy = ({ level, input }) => {
 	const { instruction } = DataFroggy[level];
 
 	return (
-		<div className={scss.FlexFroggy}>
+		<FlexFroggys>
 			<div className="container">
-				<div className={scss.content}>
+				<Content>
 					{instruction.map((inst, index) => (
 						<div key={index}>
 							<div style={{ display: "flex", justifyContent: input }}>
@@ -1809,10 +1809,20 @@ const FlexFroggy = ({ level, input }) => {
 							</div>
 						</div>
 					))}
-				</div>
+				</Content>
 			</div>
-		</div>
+		</FlexFroggys>
 	);
 };
 
 export default FlexFroggy;
+
+const FlexFroggys = styled("div")(() => ({
+	backgroundColor: "rgb(27, 27, 171)",
+	width: "100%",
+	height: "100vh",
+}));
+
+const Content = styled("div")(() => ({
+	display: "flex",
+}));

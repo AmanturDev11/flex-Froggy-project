@@ -5,7 +5,6 @@ import React, { FC, useState } from "react";
 // import FlexFroggy from "./flexFroggy/FlexFroggy";
 import { Button } from "./UI/Button";
 import Input from "./UI/Input";
-// import scss from "./FroggyLogica.module.scss";
 import Header from "../layout/header/Header";
 import MapText from "./mapText/MapText";
 import { styled } from "@mui/material";
