@@ -8,6 +8,7 @@ import Input from "./UI/Input";
 import scss from "./FroggyLogica.module.scss";
 import Header from "../layout/header/Header";
 import MapText from "./mapText/MapText";
+// import { DataFroggy } from "../utils/data";
 
 const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 	// const [input, setInput] = useState("");
@@ -38,7 +39,10 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 					"flex-direction: column-reverse; justify-content: space-between") ||
 			(number === 12 &&
 				value ===
-					"flex-direction: row-reverse; justify-content: center; align-items: flex-end")
+					"flex-direction: row-reverse; justify-content: center; align-items: flex-end") ||
+			(number === 13 && value === "order: 1") ||
+			(number === 14 && value === "order: -1") ||
+			(number === 15 && value === "align-self: flex-end")
 		) {
 			setCorrect(true);
 		} else {
@@ -151,7 +155,12 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 							</Button>
 						</div>
 					</div>
-
+					{/* <span>{levelData.}</span> */}
+					{/* {currentInstruction.map((el, index) => (
+						<div key={index}>
+							<span>{el.vari && el.vari}</span>
+						</div>
+					))} */}
 					{/* <FlexFroggy level={level} input={input} /> */}
 				</div>
 			</div>

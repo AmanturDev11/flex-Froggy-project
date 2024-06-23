@@ -41,6 +41,11 @@ type Instruction = {
 	img31?: string;
 	img32?: string;
 	img33?: string;
+	img34?: string;
+	img35?: string;
+	img36?: string;
+	img37?: string;
+	img38?: string;
 	icon3?: string;
 	icon4?: string;
 	icon5?: string;
@@ -72,6 +77,12 @@ type Instruction = {
 	icon31?: string;
 	icon32?: string;
 	icon33?: string;
+	icon34?: string;
+	icon35?: string;
+	icon36?: string;
+	icon37?: string;
+	icon38?: string;
+	// vari?: string;
 };
 
 interface DataFroggyTypes {
@@ -104,6 +115,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			},
 		],
 		example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
+		vari: "Туура жобуу",
 	},
 	{
 		id: 2,
@@ -383,32 +395,54 @@ export const DataFroggy: DataFroggyTypes[] = [
 			{
 				condition1:
 					"Используй свойство order, чтобы разместить лягушат на своих лилиях.",
+				img34: "https://flexboxfroggy.com/favicon.ico",
+				img35:
+					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				img36:
+					"https://avatars.yandex.net/get-music-content/4387391/1ae22049.a.15938843-1/m1000x1000?webp=false",
+				icon34:
+					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				icon35:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+				icon36:
+					"https://catherineasquithgallery.com/uploads/posts/2021-02/1612890067_59-p-krasnii-odnotonnii-fon-64.jpg",
 			},
 		],
 		// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
 	},
-	// {
-	// 	id: 15,
-	// 	level: 15,
-	// 	text: "Используй свойство order, чтобы отправить красного лягушонка на его лилию.",
-	// 	instruction: [
-	// 		{
-	// 			сondition1: null,
-	// 		},
-	// 	],
-	// 	// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
-	// },
-	// {
-	// 	id: 16,
-	// 	level: 16,
-	// 	text: "Ещё одно свойство, которое ты можешь применить к определенному элементу — это align-self. Это свойство принимает те же значения, что и align-items.",
-	// 	instruction: [
-	// 		{
-	// 			сondition1: null,
-	// 		},
-	// 	],
-	// 	// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
-	// },
+	{
+		id: 15,
+		level: 15,
+		text: "Используй свойство order, чтобы отправить красного лягушонка на его лилию.",
+		instruction: [
+			{
+				img37: "https://flexboxfroggy.com/favicon.ico",
+				// img38: "https://flexboxfroggy.com/favicon.ico",
+				// img39: "https://flexboxfroggy.com/favicon.ico",
+				// img40: "https://flexboxfroggy.com/favicon.ico",
+				img38:
+					"https://avatars.yandex.net/get-music-content/4387391/1ae22049.a.15938843-1/m1000x1000?webp=false",
+				icon37:
+					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				// icon38:
+				// 	"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				// icon39:
+				// 	"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				// icon40:
+				// 	"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				icon38:
+					"https://catherineasquithgallery.com/uploads/posts/2021-02/1612890067_59-p-krasnii-odnotonnii-fon-64.jpg",
+			},
+		],
+		// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
+	},
+	{
+		id: 16,
+		level: 16,
+		text: "Ещё одно свойство, которое ты можешь применить к определенному элементу — это align-self. Это свойство принимает те же значения, что и align-items.",
+		instruction: [{}],
+		// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
+	},
 ];
 
 console.log(DataFroggy[0]);

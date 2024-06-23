@@ -1347,6 +1347,297 @@ const FlexFroggy = ({ level, input }) => {
 									/>
 								)}
 							</div>
+							<div
+								style={{ display: "flex", marginTop: "-28rem", gap: "4rem" }}>
+								{inst.img34 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img34}
+										alt="img3"
+									/>
+								)}
+								{inst.img35 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+											...(input === "order: 1" ? { left: "9rem" } : {}),
+										}}
+										src={inst.img35}
+										alt="img3"
+									/>
+								)}
+								{inst.img36 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+											...(input === "order: 1" ? { right: "9rem" } : {}),
+										}}
+										src={inst.img36}
+										alt="img3"
+									/>
+								)}
+							</div>
+							<div>
+								{inst.icon34 && (
+									<img
+										style={{
+											position: "relative",
+											// left: "270px",
+											// bottom: "60px",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon34}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon36 && (
+									<img
+										style={{
+											position: "relative",
+											// left: "270px",
+											// bottom: "60px",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											left: "1rem",
+										}}
+										src={inst.icon36}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon35 && (
+									<img
+										style={{
+											position: "relative",
+											// left: "270px",
+											// bottom: "60px",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											left: "3rem",
+										}}
+										src={inst.icon35}
+										alt="icon3"
+									/>
+								)}
+							</div>
+							<div style={{ display: "flex", gap: "43px", marginLeft: "2rem" }}>
+								{inst.img37 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+											...(input === "order: -1" ? { left: "23rem" } : {}),
+											...(input === "order: -2" ? { left: "23rem" } : {}),
+											...(input === "order: -3" ? { left: "23rem" } : {}),
+											...(input === "order: -4" ? { left: "23rem" } : {}),
+											...(input === "order: -5" ? { left: "23rem" } : {}),
+											...(input === "order: -6" ? { left: "23rem" } : {}),
+											...(input === "order: -7" ? { left: "23rem" } : {}),
+											...(input === "order: -8" ? { left: "23rem" } : {}),
+											...(input === "order: -9" ? { left: "23rem" } : {}),
+										}}
+										src={inst.img37}
+										alt="img3"
+									/>
+								)}
+								{inst.img37 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+										}}
+										src={inst.img37}
+										alt="img3"
+									/>
+								)}
+								{inst.img37 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											// bottom: "1rem",
+											// top: "6rem",
+											borderRadius: "5rem",
+										}}
+										src={inst.img37}
+										alt="img3"
+									/>
+								)}
+								{inst.img38 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											...(input === "order: -1" ? { right: "23rem" } : {}),
+											...(input === "order: -2" ? { right: "23rem" } : {}),
+											...(input === "order: -3" ? { right: "23rem" } : {}),
+											...(input === "order: -4" ? { right: "23rem" } : {}),
+											...(input === "order: -5" ? { right: "23rem" } : {}),
+											...(input === "order: -6" ? { right: "23rem" } : {}),
+											...(input === "order: -7" ? { right: "23rem" } : {}),
+											...(input === "order: -8" ? { right: "23rem" } : {}),
+											...(input === "order: -9" ? { right: "23rem" } : {}),
+										}}
+										src={inst.img38}
+										alt="img3"
+									/>
+								)}
+								{inst.img37 && (
+									<img
+										style={{
+											display: "flex",
+											justifyContent: input,
+											position: "relative",
+											zIndex: "100",
+											width: "5rem",
+											height: "5rem",
+											borderRadius: "5rem",
+											// ...(input ===
+											// "flex-direction: row-reverse; justify-content: center; align-items: flex-end"
+											// 	? { top: "39rem", left: "24rem" }
+											// 	: {}),
+										}}
+										src={inst.img37}
+										alt="img3"
+									/>
+								)}
+							</div>
+							<div style={{ display: "flex", gap: "10px", marginLeft: "2rem" }}>
+								{inst.icon38 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon38}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon37 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon37}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon37 && (
+									<img
+										style={{
+											position: "relative",
+											// left: "270px",
+											// bottom: "60px",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon37}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon37 && (
+									<img
+										style={{
+											position: "relative",
+											// left: "270px",
+											// bottom: "60px",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon37}
+										alt="icon3"
+									/>
+								)}
+								{inst.icon37 && (
+									<img
+										style={{
+											position: "relative",
+											width: "7rem",
+											height: "7rem",
+											borderRadius: "5rem",
+											bottom: "6rem",
+											right: "1rem",
+										}}
+										src={inst.icon37}
+										alt="icon3"
+									/>
+								)}
+							</div>
 						</div>
 					))}
 				</div>
