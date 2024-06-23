@@ -1,0 +1,9 @@
+.FlexFroggy {
+	background-color: rgb(27, 27, 171);
+	width: 100%;
+	// height: 100%;
+	height: 100vh;
+	.content {
+		display: flex;
+	}
+}

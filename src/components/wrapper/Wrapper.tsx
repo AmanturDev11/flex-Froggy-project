@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import FroggyLogica from "../FroggyLogica";
-// import FlexFroggy from "../flexFroggy/FlexFroggy";
 import { DataFroggy } from "../../utils/data";
+import FlexFroggy from "../flexFroggy/FlexFroggy";
 
 const Wrapper = () => {
 	const [level, setLevel] = useState(0);
+	const [input, setInput] = useState("");
 
 	const nextLevel = () => {
 		if (level < DataFroggy.length - 1) {
@@ -20,13 +21,19 @@ const Wrapper = () => {
 
 	return (
 		<div>
-			<FroggyLogica
-				levelData={DataFroggy[level]}
-				nextLevel={nextLevel}
-				prevLevel={prevLevel}
-				level={level}
-			/>
-			{/* <FlexFroggy level={level} /> */}
+			<div className="container">
+				<div style={{ display: "flex" }}>
+					<FroggyLogica
+						levelData={DataFroggy[level]}
+						nextLevel={nextLevel}
+						prevLevel={prevLevel}
+						// level={level}
+						input={input}
+						setInput={setInput}
+					/>
+					<FlexFroggy level={level} input={input} />
+				</div>
+			</div>
 		</div>
 	);
 };
