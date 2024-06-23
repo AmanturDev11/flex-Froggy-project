@@ -1,16 +1,23 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 // import image1Icon from "../assets/icons/skip-left-fill.svg";
 // import image2Icon from "../assets/icons/skip-right-fill.svg";
 // import { DataFroggy } from "../utils/data";
 // import FlexFroggy from "./flexFroggy/FlexFroggy";
 import { Button } from "./UI/Button";
 import Input from "./UI/Input";
-import scss from "./FroggyLogica.module.scss";
+// import scss from "./FroggyLogica.module.scss";
 import Header from "../layout/header/Header";
 import MapText from "./mapText/MapText";
+import { styled } from "@mui/material";
 // import { DataFroggy } from "../utils/data";
 
-const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
+const FroggyLogica: FC = ({
+	levelData,
+	nextLevel,
+	prevLevel,
+	input,
+	setInput,
+}) => {
 	// const [input, setInput] = useState("");
 	const [correct, setCorrect] = useState(false);
 	const [number, setNumber] = useState(0);
@@ -78,94 +85,76 @@ const FroggyLogica = ({ levelData, nextLevel, prevLevel, input, setInput }) => {
 	// const currentInstruction = DataFroggy[number].instruction;
 
 	return (
-		<div className={scss.FroggyLogica}>
+		<FroggyLogicas>
 			<div className="container">
-				<div className={scss.content}>
+				<Content>
 					<div>
-						{/* <div style={{ display: "flex", justifyContent: "flex-end" }}>
-							<div
-								style={{
-									display: "flex",
-									justifyContent: "center",
-									alignItems: "center",
-									marginRight: "50px",
-									backgroundColor: "rgba(216, 208, 208, 0.771)",
-									borderRadius: "3px",
-									width: "180px",
-									cursor: "pointer",
-								}}>
-								<img
-									style={{
-										width: "25px",
-										cursor: "pointer",
-										backgroundColor: "rgba(216, 208, 208, 0.771)",
-									}}
-									onClick={handlePrevClick}
-									src={image1Icon}
-									alt=""
-								/>
-								Уровень {number + 1} из {DataFroggy.length}
-								<img
-									style={{
-										width: "25px",
-										cursor: "pointer",
-										backgroundColor: "rgba(216, 208, 208, 0.771)",
-									}}
-									onClick={handleNextClick}
-									src={image2Icon}
-									alt=""
-								/>
-							</div>
-						</div> */}
 						<Header
 							number={number}
 							handlePrevClick={handlePrevClick}
 							handleNextClick={handleNextClick}
 						/>
 						<MapText levelData={levelData} number={number} />
-						{/* <div>
+						<Cards>
+							<SanContent>
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+								<p>4</p>
+								<p>5</p>
+								<p>6</p>
+								<p>7</p>
+								<p>8</p>
+								<p>9</p>
+								<p>10</p>
+							</SanContent>
 							<div>
-								<span>{levelData.text}</span>
-							</div>
-							{currentInstruction.map((el, index) => (
-								<div key={index}>
-									<ul>
-										<li>{el.condition1 && el.condition1}</li>
-										<li>{el.condition2 && el.condition2}</li>
-										<li>{el.condition3 && el.condition3}</li>
-										<li>{el.condition4 && el.condition4}</li>
-										<li>{el.condition5 && el.condition5}</li>
-									</ul>
-								</div>
-							))}
-						</div> */}
-						{/* <input type="text" value={input} onChange={handleChange} /> */}
-						{/* <button onClick={handleButtonClick} disabled={!correct}>
-				Move
-			</button> */}
-						<div className={scss.cards}>
-							<div>
+								<p style={{ color: "rgba(31, 28, 28, 0.756)" }}>#pond </p>
+								<p style={{ color: "rgba(31, 28, 28, 0.756)" }}>
+									{" "}
+									display: flex;
+								</p>
 								<Input type="text" value={input} onChange={handleChange} />
 							</div>
 							<Button
 								onClick={handleButtonClick}
 								disabled={!correct}
 								variant="contained">
-								Add
+								Следующий
 							</Button>
-						</div>
+						</Cards>
 					</div>
-					{/* <span>{levelData.}</span> */}
-					{/* {currentInstruction.map((el, index) => (
-						<div key={index}>
-							<span>{el.vari && el.vari}</span>
-						</div>
-					))} */}
-					{/* <FlexFroggy level={level} input={input} /> */}
-				</div>
+				</Content>
 			</div>
-		</div>
+		</FroggyLogicas>
 	);
 };
 
 export default FroggyLogica;
+
+const FroggyLogicas = styled("div")(() => ({
+	display: "flex",
+	width: "100%",
+	height: "100vh",
+	backgroundColor: "rgb(125, 201, 49)",
+}));
+
+const Content = styled("div")(() => ({
+	display: "flex",
+	color: "white",
+}));
+
+const Cards = styled("div")(() => ({
+	display: "flex",
+	alignItems: "center",
+	gap: "1rem",
+	backgroundColor: "rgba(251, 248, 248, 0.8)",
+	borderRadius: "5px",
+}));
+
+const SanContent = styled("div")(() => ({
+	display: "flex",
+	alignItems: "center",
+	flexDirection: "column",
+	backgroundColor: "darkgray",
+}));

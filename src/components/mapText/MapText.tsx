@@ -4,7 +4,7 @@ import { DataFroggy } from "../../utils/data";
 const MapText = ({ levelData, number }) => {
 	const currentInstruction = DataFroggy[number].instruction;
 	return (
-		<div>
+		<div style={{ marginTop: "1rem" }}>
 			<div>
 				<div>
 					<span>{levelData.text}</span>
