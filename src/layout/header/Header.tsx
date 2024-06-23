@@ -7,6 +7,7 @@ const Header = ({ number, handlePrevClick, handleNextClick }) => {
 	return (
 		<div>
 			<div>
+					<h3>Агай дагы кыла турган нерселер бар</h3>
 				<div style={{ display: "flex", alignItems: "center" }}>
 					<h1>FLEXBOX FROGGY</h1>
 					<div
