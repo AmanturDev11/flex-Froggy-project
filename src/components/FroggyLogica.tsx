@@ -49,13 +49,14 @@ const FroggyLogica: FC = ({
 			(number === 13 && value === "order: 1") ||
 			(number === 14 && value === "order: -1") ||
 			(number === 15 && value === "align-self:flex-end") ||
-			(number === 16 && value === "order: 1 align-self: flex-end")	
+			(number === 16 && value === "order: 1 align-self: flex-end")
 		) {
 			setCorrect(true);
 		} else {
 			setCorrect(false);
 		}
 	};
+	console.log(number, "alihan");
 
 	const handleButtonClick = () => {
 		if (correct) {
@@ -76,10 +77,12 @@ const FroggyLogica: FC = ({
 	};
 
 	const handleNextClick = () => {
-		nextLevel();
-		setInput("");
-		setCorrect(false);
-		setNumber((prevValue) => prevValue + 1);
+		if (number < 16) {
+			nextLevel();
+			setInput("");
+			setCorrect(false);
+			setNumber((prevValue) => prevValue + 1);
+		}
 	};
 
 	// const currentInstruction = DataFroggy[number].instruction;
