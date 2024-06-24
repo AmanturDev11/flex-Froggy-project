@@ -12,5 +12,6 @@ export const Button = ({ children, onClick, variant, type, ...rest }) => {
 const ClassButton = styled(ButtonMui)(() => ({
 	backgroundColor: "red",
 	width: "110px",
+	color: "white",
 	// padding: '10px',
 }));
