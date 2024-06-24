@@ -8,7 +8,6 @@ const Header = ({ number, handlePrevClick, handleNextClick }) => {
 	return (
 		<div>
 			<div>
-				<h3>Агай дагы кыла турган нерселер бар</h3>
 				<Content>
 					<h1>FLEXBOX FROGGY</h1>
 					<UsContent>
