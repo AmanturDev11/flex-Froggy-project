@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { ChangeEvent, FC, useState } from "react";
 // import image1Icon from "../assets/icons/skip-left-fill.svg";
 // import image2Icon from "../assets/icons/skip-right-fill.svg";
 // import { DataFroggy } from "../utils/data";
@@ -21,7 +21,7 @@ const FroggyLogica: FC = ({
 	const [correct, setCorrect] = useState(false);
 	const [number, setNumber] = useState(0);
 
-	const handleChange = (e) => {
+	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
 		const value = e.target.value.trim();
 		setInput(value);
 
@@ -48,7 +48,8 @@ const FroggyLogica: FC = ({
 					"flex-direction: row-reverse; justify-content: center; align-items: flex-end") ||
 			(number === 13 && value === "order: 1") ||
 			(number === 14 && value === "order: -1") ||
-			(number === 15 && value === "align-self:flex-end")
+			(number === 15 && value === "align-self:flex-end") ||
+			(number === 16 && value === "order: 1 align-self: flex-end")	
 		) {
 			setCorrect(true);
 		} else {

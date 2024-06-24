@@ -48,6 +48,8 @@ type Instruction = {
 	img38?: string;
 	img39?: string;
 	img40?: string;
+	img41?: string;
+	img42?: string;
 	icon3?: string;
 	icon4?: string;
 	icon5?: string;
@@ -86,6 +88,8 @@ type Instruction = {
 	icon38?: string;
 	icon39?: string;
 	icon40?: string;
+	icon41?: string;
+	icon42?: string;
 	// vari?: string;
 };
 
@@ -452,6 +456,23 @@ export const DataFroggy: DataFroggyTypes[] = [
 				icon39:
 					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
 				icon40:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+			},
+		],
+		// example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
+	},
+	{
+		id: 17,
+		level: 17,
+		text: "Используй order и align-self вместе, чтобы помочь лягушатам добраться к своим целям.",
+		instruction: [
+			{
+				img41: "https://flexboxfroggy.com/favicon.ico",
+				img42:
+					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				icon41:
+					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
+				icon42:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
 			},
 		],
