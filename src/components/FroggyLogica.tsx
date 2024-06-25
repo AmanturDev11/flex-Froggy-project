@@ -10,7 +10,15 @@ import MapText from "./mapText/MapText";
 import { styled } from "@mui/material";
 // import { DataFroggy } from "../utils/data";
 
-const FroggyLogica: FC = ({
+interface LogicaPropsType {
+	levelData: any;
+	nextLevel: () => void;
+	prevLevel: () => void;
+	input: string;
+	setInput: string;
+}
+
+const FroggyLogica: FC<LogicaPropsType> = ({
 	levelData,
 	nextLevel,
 	prevLevel,

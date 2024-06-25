@@ -903,10 +903,10 @@ const FlexFroggy = ({ level, input }) => {
 											bottom: "1rem",
 											// top: "9rem",
 											borderRadius: "5rem",
-											// ...(input ===
-											// "flex-direction: row-reverse; justify-content: flex-end"
-											// 	? { right: "18rem" }
-											// 	: {}),
+											...(input ===
+											"flex-direction: row-reverse; justify-content: flex-end"
+												? { right: "18rem" }
+												: {}),
 										}}
 										src={inst.img24}
 										alt="img3"

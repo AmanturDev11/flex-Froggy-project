@@ -4,6 +4,7 @@ type Instruction = {
 	condition3?: string;
 	condition4?: string;
 	condition5?: string;
+	// conditionJob?: string;
 	img1?: string;
 	imgkh?: string;
 	icon1?: string;
@@ -117,6 +118,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"space-between: элементы отображаются с одинаковыми отступами между ними.",
 				condition5:
 					"space-around: элементы отображаются с одинаковыми отступами вокруг них.",
+				// conditionJob: "flex-end",
 				img1: "https://flexboxfroggy.com/favicon.ico",
 				icon1:
 					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",

@@ -5,7 +5,7 @@ import FlexFroggy from "../flexFroggy/FlexFroggy";
 
 const Wrapper = () => {
 	const [level, setLevel] = useState(0);
-	const [input, setInput] = useState("");
+	const [input, setInput] = useState<string>("");
 
 	const nextLevel = () => {
 		if (level < DataFroggy.length - 1) {
