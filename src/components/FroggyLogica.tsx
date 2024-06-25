@@ -1,8 +1,4 @@
 import React, { ChangeEvent, FC, useState } from "react";
-// import image1Icon from "../assets/icons/skip-left-fill.svg";
-// import image2Icon from "../assets/icons/skip-right-fill.svg";
-// import { DataFroggy } from "../utils/data";
-// import FlexFroggy from "./flexFroggy/FlexFroggy";
 import { Button } from "./UI/Button";
 import Input from "./UI/Input";
 import Header from "../layout/header/Header";

@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { FC } from "react";
 import { DataFroggy } from "../../utils/data";
 import { styled } from "@mui/material";
 
 interface MapTextType {
+	// levelData: any;
 	levelData: any;
 	number: number;
 }
@@ -23,10 +25,6 @@ const MapText: FC<MapTextType> = ({ levelData, number }) => {
 							<li>{el.condition3 && el.condition3}</li>
 							<li>{el.condition4 && el.condition4}</li>
 							<li>{el.condition5 && el.condition5}</li>
-							{/* <div>
-								<h4>Туура жоб</h4>
-								<span>{el.conditionJob && el.conditionJob}</span>
-							</div> */}
 						</ul>
 					</TextCards>
 				))}

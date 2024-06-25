@@ -42,65 +42,69 @@ const Header: FC<HeaderPropsType> = ({
 					{isModal &&
 						createPortal(
 							<Modal>
-								<div>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										1
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										2
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										3
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										4
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										5
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										6
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										7
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										8
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										9
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										10
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										11
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										12
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										13
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										14
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										15
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										16
-									</button>
-									<button style={{ width: "30px", cursor: "pointer" }}>
-										17
-									</button>
-									<img
-										onClick={() => setIsModal(false)}
-										style={{ width: "100px", cursor: "pointer" }}
-										src={buttonX}
-										alt=""
-									/>
-								</div>
+								<ModalContent>
+									<ModalCards>
+										<div>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												1
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												2
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												3
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												4
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												5
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												6
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												7
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												8
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												9
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												10
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												11
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												12
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												13
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												14
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												15
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												16
+											</button>
+											<button style={{ width: "30px", cursor: "pointer" }}>
+												17
+											</button>
+											<img
+												onClick={() => setIsModal(false)}
+												style={{ width: "50px", cursor: "pointer" }}
+												src={buttonX}
+												alt=""
+											/>
+										</div>
+									</ModalCards>
+								</ModalContent>
 							</Modal>,
 							document.getElementById("modal")
 						)}
@@ -138,4 +142,18 @@ const Img = styled("img")(() => ({
 	width: "25px",
 	cursor: "pointer",
 	backgroundColor: "rgba(216, 208, 208, 0.771)",
+}));
+
+const ModalContent = styled("div")(() => ({
+	display: "flex",
+	justifyContent: "center",
+	alignItems: "center",
+	flexDirection: "column",
+	gap: "2rem",
+}));
+
+const ModalCards = styled("div")(() => ({
+	width: "100px",
+	// height: "200px",
+	backgroundColor: "black",
 }));
