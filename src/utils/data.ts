@@ -301,6 +301,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"row-reverse: элементы отображаются в обратном порядке к направлению текста.",
 				condition3: "column: элементы распологаются сверху вниз.",
 				condition4: "column-reverse: элементы распологаются снизу вверх.",
+				vari: "flex-direction: column",
 				img19: "https://flexboxfroggy.com/favicon.ico",
 				img20:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -324,6 +325,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			{
 				condition1:
 					"Заметь, что когда ты устанавливаешь направление в обратном порядке для ряда или колонки, начало (start) и конец (end) тоже меняются местами.",
+				vari: "flex-direction: row-reverse; justify-content: flex-end",
 				img22: "https://flexboxfroggy.com/favicon.ico",
 				img23:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -347,6 +349,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			{
 				condition1:
 					"Заметь, когда в качестве направления выбрана колонка, то justify-content влияет на вертикальное выравнивание, а align-items — на горизонтальное.",
+				vari: "flex-direction: column; justify-content: flex-end",
 				img25: "https://flexboxfroggy.com/favicon.ico",
 				img26:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -368,6 +371,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Помоги лягушатам найти их лилии с помощью flex-direction и justify-content.",
 		instruction: [
 			{
+				vari: "flex-direction: column-reverse; justify-content: space-between",
 				img28: "https://flexboxfroggy.com/favicon.ico",
 				img29:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -389,6 +393,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Помоги лягушатам найти их лилии с помощью flex-direction, justify-content и align-items.",
 		instruction: [
 			{
+				vari: "flex-direction: row-reverse; justify-content: center; align-items: flex-end",
 				img31: "https://flexboxfroggy.com/favicon.ico",
 				img32:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -412,6 +417,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			{
 				condition1:
 					"Используй свойство order, чтобы разместить лягушат на своих лилиях.",
+				vari: "order: 1",
 				img34: "https://flexboxfroggy.com/favicon.ico",
 				img35:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -433,6 +439,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Используй свойство order, чтобы отправить красного лягушонка на его лилию.",
 		instruction: [
 			{
+				vari: "order: -1",
 				img37: "https://flexboxfroggy.com/favicon.ico",
 				// img38: "https://flexboxfroggy.com/favicon.ico",
 				// img39: "https://flexboxfroggy.com/favicon.ico",
@@ -459,6 +466,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Ещё одно свойство, которое ты можешь применить к определенному элементу — это align-self. Это свойство принимает те же значения, что и align-items.",
 		instruction: [
 			{
+				vari: "align-self:flex-end",
 				img39: "https://flexboxfroggy.com/favicon.ico",
 				img40:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -476,6 +484,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Используй order и align-self вместе, чтобы помочь лягушатам добраться к своим целям.",
 		instruction: [
 			{
+				vari: "order: 1 align-self: flex-end",
 				img41: "https://flexboxfroggy.com/favicon.ico",
 				img42:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
