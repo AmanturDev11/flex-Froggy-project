@@ -91,7 +91,7 @@ type Instruction = {
 	icon40?: string;
 	icon41?: string;
 	icon42?: string;
-	// vari?: string;
+	vari?: string;
 };
 
 interface DataFroggyTypes {
@@ -118,6 +118,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"space-between: элементы отображаются с одинаковыми отступами между ними.",
 				condition5:
 					"space-around: элементы отображаются с одинаковыми отступами вокруг них.",
+				vari: "flex-end",
 				// conditionJob: "flex-end",
 				img1: "https://flexboxfroggy.com/favicon.ico",
 				icon1:
@@ -125,7 +126,6 @@ export const DataFroggy: DataFroggyTypes[] = [
 			},
 		],
 		example: "Например, justify-content: flex-end; сдвинет лягушонка вправо.",
-		// vari: "Туура жобуу",
 	},
 	{
 		id: 2,
@@ -142,6 +142,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"space-between: элементы отображаются с одинаковыми отступами между ними.",
 				condition5:
 					"space-around: элементы отображаются с одинаковыми отступами вокруг них.",
+				vari: "center",
 				imgkh: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
 				iconkh:
@@ -160,6 +161,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 			{
 				condition1:
 					"Если ты чувствуешь, что забыл возможные значения свойства, ты можешь навести курсор на название свойства, чтобы посмотреть их. Попробуй навести курсор на justify-content.",
+				vari: "space-around",
 				img3: "https://flexboxfroggy.com/favicon.ico",
 				img5: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
 				img4: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -179,6 +181,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Теперь лилии по краям уплыли к берегам, увеличив пространство между ними. Используй justify-content. В этот раз у лилий одинаковое расстояние между ними.",
 		instruction: [
 			{
+				vari: "space-between",
 				img6: "https://flexboxfroggy.com/favicon.ico",
 				img7: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
 				img8: "https://avatars.yandex.net/get-music-content/4387391/1ae22049.a.15938843-1/m1000x1000?webp=false",
@@ -208,6 +211,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"baseline: элементы отображаются на базовой линии контейнера.",
 				condition5:
 					"stretch: элементы растягиваются, чтобы заполнить контейнер.",
+				vari: "flex-end",
 				img9: "https://flexboxfroggy.com/favicon.ico",
 				img10:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -229,6 +233,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Направь лягушонка в центр пруда, используя justify-content и align-items вместе.",
 		instruction: [
 			{
+				vari: "justify-content:center; align-items:center",
 				img12: "https://flexboxfroggy.com/favicon.ico",
 				icon12:
 					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
@@ -242,6 +247,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 		text: "Лягушатам снова нужно пересечь пруд. В этот раз к лилиям, с достаточно большим пространством вокруг них. Используй комбинацию justify-content и align-items.",
 		instruction: [
 			{
+				vari: "space-around; flex-end",
 				img13: "https://flexboxfroggy.com/favicon.ico",
 				img14:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
@@ -268,6 +274,7 @@ export const DataFroggy: DataFroggyTypes[] = [
 					"row-reverse: элементы отображаются в обратном порядке к направлению текста.",
 				condition3: "column: элементы располагаются сверху вниз.",
 				condition4: "column-reverse: элементы располагаются снизу вверх.",
+				vari: "flex-direction: row-reverse",
 				img16: "https://flexboxfroggy.com/favicon.ico",
 				img17:
 					"https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",

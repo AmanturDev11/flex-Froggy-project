@@ -36,9 +36,9 @@ const FroggyLogica: FC<LogicaPropsType> = ({
 			(number === 3 && value === "space-between") ||
 			(number === 4 && value === "flex-end") ||
 			(number === 5 &&
-				value === "justify-content: center; align-items: center;") ||
+				value === "justify-content:center; align-items:center") ||
 			(number === 6 && value === "space-around; flex-end") ||
-			(number === 7 && value === "row-reverse") ||
+			(number === 7 && value === "flex-direction: row-reverse") ||
 			(number === 8 && value === "flex-direction: column") ||
 			(number === 9 &&
 				value === "flex-direction: row-reverse; justify-content: flex-end") ||

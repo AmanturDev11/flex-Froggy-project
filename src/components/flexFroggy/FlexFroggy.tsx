@@ -431,7 +431,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 										bottom: "400px",
 										borderRadius: "5rem",
 										...(input ===
-										"justify-content: center; align-items: center;"
+										"justify-content:center; align-items:center"
 											? { top: "-200px", left: "305px" }
 											: {}),
 									}}
@@ -583,7 +583,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 											height: "5rem",
 											bottom: "29rem",
 											borderRadius: "5rem",
-											...(input === "row-reverse" ? { left: "30rem" } : {}),
+											...(input === "flex-direction: row-reverse" ? { left: "30rem" } : {}),
 										}}
 										src={inst.img16}
 										alt="img3"
@@ -600,7 +600,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 											height: "5rem",
 											bottom: "29rem",
 											borderRadius: "5rem",
-											...(input === "row-reverse" ? { left: "15rem" } : {}),
+											...(input === "flex-direction: row-reverse" ? { left: "15rem" } : {}),
 										}}
 										src={inst.img17}
 										alt="img3"

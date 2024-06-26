@@ -26,6 +26,10 @@ const MapText: FC<MapTextType> = ({ levelData, number }) => {
 							<li>{el.condition4 && el.condition4}</li>
 							<li>{el.condition5 && el.condition5}</li>
 						</ul>
+						<div style={{ marginTop: "20px" }}>
+							<span>Туура жоп</span>
+							<h4>{el.vari && el.vari}</h4>
+						</div>
 					</TextCards>
 				))}
 			</div>
