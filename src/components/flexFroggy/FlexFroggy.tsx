@@ -479,7 +479,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 														justifyContent: "space-around",
 														top: "180px",
 														left: "10px",
-												  }
+												}
 												: {}),
 										}}
 										src={inst.img13}
@@ -502,7 +502,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 														display: "flex",
 														justifyContent: "space-around",
 														top: "180px",
-												  }
+												}
 												: {}),
 										}}
 										src={inst.img14}
@@ -525,7 +525,7 @@ const FlexFroggy: React.FC<FroggyType> = ({ level, input }) => {
 														display: "flex",
 														justifyContent: "space-around",
 														top: "180px",
-												  }
+												}
 												: {}),
 										}}
 										src={inst.img15}
